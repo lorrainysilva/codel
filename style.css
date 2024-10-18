@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --fonte01:"Dancing Script", cursive;
+    --fonte02: "Sriracha", cursive;
+    --fonte03:"Passion One", sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-size: 1.2em;
+}
+/*dando estilo ao cabeçalho da página, toda parte header*/
+header{
+    background-color: #000000;
+    color: white;
+    font-variant: small-caps;
+    text-align: center;
+    font-family: var(--fonte03);
+    font-size: 1.4em;
+    
+}
+header h1{
+    padding-top: 40px;
+    padding-bottom:10px;
+}
+header p{
+    padding-bottom: 40px;
+}
+header>p>a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #a85151;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+/*dando estilo aos versos --- seção*/
+section{
+    line-height: 1.5em;
+    padding-left: 60px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+section>pre{
+    font-weight: bold;
+    font-size: larger;
+    font-family: var(--fonte01);
+    white-space: pre-line;
+}
+/*ajustei o fundo da escrita sob a foto com o pre*/
+pre.imagem{
+    display: inline-block;
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: #000000b0;
+}
+section#flor{ 
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-image: url("imagens/background001.jpg");
+    background-position: right center;
+    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#carta{
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-image: url("imagens/background002.jpg");
+    background-position: right center;
+    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;  
+}
+
+footer{
+    font-family:sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
